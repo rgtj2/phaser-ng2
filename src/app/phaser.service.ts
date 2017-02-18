@@ -8,7 +8,7 @@ export class PhaserService {
   }
 
   createGame(width, height, selector){
-    return new this.Phaser.Game(width, height, Phaser.AUTO, selector);
+    return new this.Phaser.Game(width, height, this.Phaser.AUTO, selector);
   }
 
 }
