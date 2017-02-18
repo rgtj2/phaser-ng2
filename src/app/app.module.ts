@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PhaserGameComponent } from './phaser-game/phaser-game.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhaserGameComponent
   ],
   imports: [
     BrowserModule,
