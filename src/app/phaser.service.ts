@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class PhaserService {
-  Phaser;
+  phaser;
   constructor() {
-    this.Phaser = window['Phaser'];
+    this.phaser = window['Phaser'];
   }
 
   createGame(width, height, selector){
-    return new this.Phaser.Game(width, height, this.Phaser.AUTO, selector);
+    return new this.phaser.Game(width, height, this.phaser.AUTO, selector);
   }
 
 }
