@@ -1,0 +1,22 @@
+<h1 md-dialog-title>Tadpole, Help Me Escape to the Pond</h1>
+<div md-dialog-content>
+    <div [ngSwitch]="isMobile">
+        <div *ngSwitchCase="false">
+            <div> Use the keyboard arrow keys to move Tadpole</div>
+            <div> and / or left-click the mouse where you want Tadpole to move</div>
+            <div>The game scales based on your screen size when you click, 'OK',</div>
+            <div>so resize your browser window now (you decide!, no promises.. ha! )</div>
+        </div>
+        <div *ngSwitchCase="true">
+            <div>Tadpole moves to where you touch the screen</div>
+            <div>The game scales based on your screen orientation when you click, 'OK',</div>
+            <div>so rotate your mobile device now (you decide!, no promises.. ha! )</div>
+        </div>
+    </div>
+
+
+</div>
+
+<div md-dialog-actions>
+    <button md-button (click)="dialogRef.close()">OK!</button>
+</div>
